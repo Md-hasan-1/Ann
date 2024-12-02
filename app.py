@@ -5,12 +5,12 @@ import pickle
 
 # Load the trained model
 model = tf.keras.models.load_model(
-    'C:/Users/hasan/Documents/DS/Udemy/DL/ANN/Classification/artifact/class.h5'
+    'Classification/artifact/class.h5'
     )
 
 # Load the encoders and scaler
 with open(
-    "C:/Users/hasan/Documents/DS/Udemy/DL/ANN/Classification/artifact/preprocessor.pkl", 
+    "Classification/artifact/preprocessor.pkl", 
     'rb') as file_obj:
     preprocessor = pickle.load(file_obj)
 
